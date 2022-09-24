@@ -9,3 +9,7 @@ game.weapons = [
 
 game.name = ['Miss Scarlet', 'Mr. Green'];
 
+console.log(game.weapons[0]);
+console.log();
+console.log(game.name[0]);
+
