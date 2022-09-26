@@ -1,29 +1,26 @@
-const game = {};
+function gameBuilder() {
+    const clueGame = {};
 
-game['suspects'] = [];
+    clueGame['suspects'] = [];
 
-game.suspects.push({
-    name: 'Rusty',
-    color: 'orange'
-});
+    clueGame.suspects.push({
+        name: 'Rusty',
+        color: 'orange'
+    });
 
-game.suspects.push({
-    name: 'Miss Scarlet',
-    color: 'red'
-});
+    clueGame.suspects.push({
+        name: 'Miss Scarlet',
+        color: 'red'
+    });
 
-function showGameSuspects() {
+    return clueGame;
+}
+
+function showSuspectsDetails(game) {
     for (let i = 0; i < game.suspects.length; i++) {
         console.log(game.suspects[i]);
     }
-
-    for (let i = 0; i < game.suspects.length; i++) {
-        console.log(game.suspects[i].name);
-    }
-
-    for (let i = 0; i < game.suspects.length; i++) {
-        console.log(game.suspects[i].color);
-    }
 }
 
-showGameSuspects();
+let game = gameBuilder();
+showSuspectsDetails(game);
