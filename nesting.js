@@ -12,6 +12,10 @@ game.suspects.push({
     color: 'red'
 });
 
-for (const gameObject of game.suspects) {
-    console.log(gameObject.name);
+function showGameSuspects() {
+    for (let i = 0; i < game.suspects.length; i++) {
+        console.log(game.suspects[i]);
+    }
 }
+
+showGameSuspects();
