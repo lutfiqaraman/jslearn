@@ -16,11 +16,16 @@ function gameBuilder() {
     return clueGame;
 }
 
-function showSuspectsDetails(game) {
+function ShowSuspectsDetails(game) {
     for (let i = 0; i < game.suspects.length; i++) {
         console.log(game.suspects[i]);
     }
 }
 
+function DestructuringGame(game) {
+    return game;
+}
+
 let game = gameBuilder();
-showSuspectsDetails(game);
+ShowSuspectsDetails(game);
+DestructuringGame(game);
