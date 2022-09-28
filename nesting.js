@@ -23,7 +23,11 @@ function ShowSuspectsDetails(game) {
 }
 
 function DestructuringGame(game) {
-    return game;
+    let jsonGame = JSON.stringify(game.suspects[0]);
+    let { name, color } = {name: jsonGame.name, color: jsonGame.color};
+
+    console.log(name);
+    console.log(color);
 }
 
 let game = gameBuilder();
