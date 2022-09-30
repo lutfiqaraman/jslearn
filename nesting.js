@@ -1,4 +1,5 @@
 function gameBuilder() {
+
     const clueGame = {};
 
     clueGame['suspects'] = [];
@@ -17,6 +18,7 @@ function gameBuilder() {
 }
 
 function ShowSuspectsDetails(game) {
+
     for (let i = 0; i < game.suspects.length; i++) {
         console.log(game.suspects[i]);
     }
