@@ -22,7 +22,7 @@ function ShowSuspectsDetails(game) {
     }
 }
 
-function DestructuringGame(game) {
+function DestructuringGameColor(game) {
 
     let { firstColor, secondColor } =
         {
@@ -37,4 +37,4 @@ function DestructuringGame(game) {
 let game = gameBuilder();
 
 ShowSuspectsDetails(game);
-DestructuringGame(game);
+DestructuringGameColor(game);
