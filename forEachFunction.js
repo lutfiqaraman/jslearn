@@ -1,22 +1,21 @@
 let _ = require('underscore');
+let suspects = ['Miss Scarlet', 'Colonel Mustard', 'Mr. White'];
 
 function CreateSuspectObjects(name) {
     return {
         name: name,
         color: name.split(' ')[1],
-        speak() {
-            console.log('my name is ', this.name);
+        speak: function () {
+            return `my name is  ${this.name}`;
         }
     };
 }
 
-let suspects = ['Miss Scarlet', 'Colonel Mustard', 'Mr. White'];
-let suspectsList = [];
+_.each(suspects, function (name) {
+   let suspectObject = CreateSuspectObjects(name);
+   console.log(suspectObject.speak());
+});
 
-
-for (let i = 0; i < suspects.length; i++) {
-    suspectsList.push(CreateSuspectObjects(suspects[i]));
-}
 
 
 
