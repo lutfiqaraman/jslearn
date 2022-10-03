@@ -7,3 +7,12 @@ let result = _.map(listNumber, function (number) {
 
 console.log(listNumber);
 console.log(result);
+
+let weapons = ['candlestick', 'lead pipe', 'revolver'];
+
+const makeWeaponBroken = weapons.map(function (item) {
+    return `broken ${item}`;
+});
+
+console.log(weapons);
+console.log(makeWeaponBroken);
