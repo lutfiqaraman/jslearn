@@ -9,10 +9,13 @@ console.log(listNumber);
 console.log(result);
 
 let weapons = ['candlestick', 'lead pipe', 'revolver'];
-
-const makeWeaponBroken = weapons.map(function (item) {
+let makeWeaponBroken = function (item) {
     return `broken ${item}`;
-});
+};
+
+const underScoreWeaponsResult = _.map(weapons, makeWeaponBroken);
+const JSWeaponResult = weapons.map(makeWeaponBroken);
 
 console.log(weapons);
-console.log(makeWeaponBroken);
+console.log(underScoreWeaponsResult);
+console.log(JSWeaponResult);
