@@ -14,7 +14,7 @@ let makeWeaponBroken = function (item) {
 };
 
 const underScoreWeaponsResult = _.map(weapons, makeWeaponBroken);
-const JSWeaponResult = weapons.map(makeWeaponBroken);
+const JSWeaponResult          = weapons.map(makeWeaponBroken);
 
 console.log(weapons);
 console.log(underScoreWeaponsResult);
