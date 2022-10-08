@@ -87,7 +87,7 @@ const suspectsName = _.map(presentSuspects, function (suspect) {
     return suspect.name;
 });
 
-console.log('The list of suspects that present that day are : ' + suspectsName);
+console.log(`The list of suspects that present that day are : ${suspectsName}`);
 
 // Using UnderScore JS :: End
 
@@ -103,6 +103,6 @@ const suspectsNameJS = presentSuspectsJS.map(function (suspect) {
     return suspect.name;
 });
 
-console.log('The list of suspects that present that day are : ' + suspectsNameJS);
+console.log(`The list of suspects that present that day are : ${suspectsNameJS}`);
 
 // Using JS :: End
